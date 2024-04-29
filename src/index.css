@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #3D0000;
+  --dark-red-color: #950101;
+  --red-color: #FF0000;
+  --text-color: #ffff;
+  --title-font-size: 2rem;
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto; /* Centers the body horizontally */
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+li:hover {
+  color: var(--red-color);
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.red {
+  color: var(--red-color);
+}
+
+.grey {
+  color: darkgrey;
+}
