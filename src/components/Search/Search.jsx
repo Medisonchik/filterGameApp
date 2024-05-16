@@ -1,6 +1,6 @@
 import React from 'react';
 import './Search.css';
-
+import MediaQuery from 'react-responsive';
 
 function Search() {
     let categories = [
@@ -56,6 +56,7 @@ function Search() {
     ];
   return (
     <section className='game-search-section'>
+        {/* Search section */}
         <div className='search-section'>
             <h2 className='title-search-section'>Search <span className='red'>Games</span></h2>
             <span className='grey subtext'>Search your favorite game in one click</span>
@@ -64,6 +65,8 @@ function Search() {
                 <button type="submit" className='search-btn'>Search</button>
             </div>
         </div>
+
+        {/* Category grid */}
         <div className='category-section'>
             {categories.map((category, index) => index < 6 &&  (
                 <div className='category-box' key={index} style={{backgroundImage: `url(${category.image})`}}>
@@ -71,8 +74,8 @@ function Search() {
                 </div>
             ))}
 
-
         </div>
+
       
     </section>
   )

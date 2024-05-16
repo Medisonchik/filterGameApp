@@ -27,6 +27,13 @@ const listOfGames = [
         image: "./crusaderKings.jpeg",
         duration: "94 hours"
     },
+    {
+        id:5,
+        category: "Casual Games",
+        name:"Stardew Valley",
+        image: "./stardewValley.jpeg",
+        duration: "150 hours"
+    },
 
 ];
 export default listOfGames;
