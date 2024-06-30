@@ -13,17 +13,61 @@ footer {
 }
 
 .footer-paragraph {
-    max-width: 500px;
+    max-width: 700px;
     text-align: justify;
     padding-bottom: 1.25rem;
     font-size: 18px;
 }
 
+.footer-links {
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-nav {
+    padding: 0.25rem 0;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.footer-nav:hover {
+    color: var(--red-color);
+}
+
 .footer-icons {
-    font-size: 24px;
     display: flex;
     gap: 1rem;
     padding-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 360px) {
+
+}
+
+@media screen and (min-width: 601px) {
+    .footer-links {
+        flex-direction: row;
+        text-align: center;
+        gap: 1.25rem;     
+    }
+
+    .footer-nav {
+        flex-direction: row;        
+        justify-content: center;
+    }
+
+}
+
+/* Large screen */
+@media screen and (min-width: 990px) {
+    
+
+}
+
+/* Extra large screen */
+@media screen and (min-width: 1001px) {
 
 }
 

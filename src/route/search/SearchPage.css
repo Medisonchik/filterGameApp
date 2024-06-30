@@ -1,0 +1,15 @@
+.grid-category-games {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2rem 1.25rem;
+}
+
+.category-section {
+
+
+}
+
+.game-section {
+    grid-column: span 3;
+
+}

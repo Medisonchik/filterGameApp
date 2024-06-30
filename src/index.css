@@ -6,7 +6,12 @@
   --dark-red-color: #950101;
   --red-color: #FF0000;
   --text-color: #ffff;
+  --color-border: hsl(240 5.9% 90%);
   --title-font-size: 2rem;
+  --border-radius: 0.5rem;
+  --font-size-small: 0.875rem;
+  --line-height-small: 1.25rem;
+
 
 }
 
@@ -20,23 +25,24 @@
 body {
   min-height: 100vh;
   max-width: 1400px;
-  margin: 0 auto; /* Centers the body horizontally */
+  margin: 0 auto; 
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
+
 
 li {
   list-style-type: none;
   font-size: 18px;
   font-weight: 500;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 li:hover {
   color: var(--red-color);
   cursor: pointer;
   transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
 }
 
 a {
@@ -50,4 +56,15 @@ a {
 
 .grey {
   color: darkgrey;
+}
+
+.font-awesome-icon {
+  transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.font-awesome-icon:hover {
+  color: var(--red-color);
+  font-size: 30px;
 }

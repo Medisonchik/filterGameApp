@@ -1,6 +1,6 @@
 import React from 'react';
 import './PopularGames.css';
-import listOfGames from './listOfGames';
+import listOfGames from '../../data/listOfGames';
 
 function PopularGames() {
   return (
